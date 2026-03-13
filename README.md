@@ -30,30 +30,6 @@ Trong project:
 ---
 
 ## 2) Tạo data stream từ 2 file CSV
-
-### 2.1 Ý tưởng
-Đọc tuần tự:
-1. File CSV thứ nhất
-2. File CSV thứ hai  
-Mỗi dòng đọc ra sẽ trích cột mục tiêu và `yield` ngay.
-
-### 2.2 Minh họa generator
-
-```python
-def stream_items(file_paths, column_name):
-    for path in file_paths:
-        with open(path, "r", encoding="utf-8", errors="replace") as f:
-            for row in reader:
-                yield row[column_name]
-```
-
-### 2.3 Ví dụ trực quan
-- File A cho stream: `a, b, c`
-- File B cho stream: `d, e`  
-=> Stream liên tục: `a -> b -> c -> d -> e`
-
----
-
 ## 3) Giải thích 3 thuật toán
 
 ### A. Reservoir Sampling
