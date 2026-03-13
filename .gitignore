@@ -1,0 +1,27 @@
+# Python cache/artifacts
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Generated outputs
+plots/
+*.png
+
+# Large datasets (keep local, do not push)
+data/*.csv
+
+# OS files
+.DS_Store
+Thumbs.db

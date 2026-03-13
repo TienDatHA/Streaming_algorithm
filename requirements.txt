@@ -1,0 +1,16 @@
+matplotlib>=3.7.0
+Pillow>=10.0.0
+cycler>=0.12.1
+contourpy>=1.0.1
+fonttools>=4.43.0
+kiwisolver>=1.4.5
+numpy>=1.23.0
+packaging>=20.0
+pyparsing>=3.0.0
+python-dateutil>=2.7.0
+six>=1.16.0
+
+# Note:
+# The rest of modules used in this project are from Python standard library:
+# csv, pathlib, typing, random, hashlib, math, dataclasses,
+# collections, statistics, time, tracemalloc.
